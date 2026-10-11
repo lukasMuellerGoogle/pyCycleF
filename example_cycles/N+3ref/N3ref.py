@@ -289,9 +289,9 @@ def viewer(prob, pt, file=sys.stdout):
     print a report of all the relevant cycle properties
     """
 
-    summary_data = (prob[pt+'.fc.Fl_O:stat:MN'], prob[pt+'.fc.alt'], prob[pt+'.inlet.Fl_O:stat:W'],
-                    prob[pt+'.perf.Fn'], prob[pt+'.perf.Fg'], prob[pt+'.inlet.F_ram'],
-                    prob[pt+'.perf.OPR'], prob[pt+'.perf.TSFC'], prob[pt+'.splitter.BPR'])
+    summary_data = (prob[pt+'.fc.Fl_O:stat:MN'][0], prob[pt+'.fc.alt'][0], prob[pt+'.inlet.Fl_O:stat:W'][0],
+                    prob[pt+'.perf.Fn'][0], prob[pt+'.perf.Fg'][0], prob[pt+'.inlet.F_ram'][0],
+                    prob[pt+'.perf.OPR'][0], prob[pt+'.perf.TSFC'][0], prob[pt+'.splitter.BPR'][0])
 
     print(file=file, flush=True)
     print(file=file, flush=True)
